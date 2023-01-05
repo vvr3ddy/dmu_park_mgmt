@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.dmu.entities","l":"Address"},{"p":"com.dmu.entities","l":"Admin"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.dmu.entities","l":"Booking"},{"p":"com.dmu.entities","l":"Customer"},{"p":"com.dmu.entities","l":"Employee"}]

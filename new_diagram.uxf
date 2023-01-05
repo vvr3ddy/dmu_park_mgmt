@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>45</x>
+      <y>36</y>
+      <w>855</w>
+      <h>369</h>
+    </coordinates>
+    <panel_attributes>com.dmu.entities::Customer
+--
+-customerId: Integer
+-customerName: String
+-address: Address
+-emailid: String
+-contactNumber: String
+-customerBookings: List&lt;Booking&gt;
+--
++Customer(): ctor
++Customer(Integer customerId, String customerName, Address address, String emailid, String contactNumber, List&lt;Booking&gt; customerBookings): ctor
++getCustomerId(): Integer
++setCustomerId(Integer customerId): void
++getCustomerName(): String
++setCustomerName(String customerName): void
++getAddress(): Address
++setAddress(Address address): void
++getEmailid(): String
++setEmailid(String emailid): void
++getContactNumber(): String
++setContactNumber(String contactNumber): void
++getCustomerBookings(): List&lt;Booking&gt;
++setCustomerBookings(List&lt;Booking&gt; customerBookings): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>909</x>
+      <y>36</y>
+      <w>441</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>com.dmu.entities::Address
+--
+-doorNumber: Integer
+-streetAddress: String
+-streetAddress2: String
+-postCode: String
+--
++Address(): ctor
++Address(Integer doorNumber, String streetAddress, String postCode): ctor
++getDoorNumber(): Integer
++setDoorNumber(Integer doorNumber): void
++getStreetAddress(): String
++setStreetAddress(String streetAddress): void
++getStreetAddress2(): String
++setStreetAddress2(String streetAddress2): void
++getPostCode(): String
++setPostCode(String postCode): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>45</x>
+      <y>414</y>
+      <w>522</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>com.dmu.entities::Employee
+--
+-employeeId: String
+-fullName: String
+-phoneNumber: String
+-emailId: String
+--
++Employee(): ctor
++Employee(String employeeId, String fullName, String phoneNumber, String emailId): ctor
++getEmployeeId(): String
++setEmployeeId(String employeeId): void
++getFullName(): String
++setFullName(String fullName): void
++getPhoneNumber(): String
++setPhoneNumber(String phoneNumber): void
++getEmailId(): String
++setEmailId(String emailId): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>414</y>
+      <w>351</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>com.dmu.entities::Admin
+--
+-adminId: String
+-fullName: String
+-emailId: String
+--
++Admin(): ctor
++Admin(String adminId, String fullName, String emailId): ctor
++getAdminId(): String
++setAdminId(String adminId): void
++getFullName(): String
++setFullName(String fullName): void
++getEmailId(): String
++setEmailId(String emailId): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>936</x>
+      <y>414</y>
+      <w>405</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>com.dmu.entities::Booking
+--
+-bookingId: String
+-customer: Customer
+-quantity: Integer
+--
++Booking(): ctor
++Booking(String bookingId, Customer customer, Integer quantity): ctor
++getBookingId(): String
++setBookingId(String bookingId): void
++getCustomer(): Customer
++setCustomer(Customer customer): void
++getQuantity(): Integer
++setQuantity(Integer quantity): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
